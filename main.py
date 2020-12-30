@@ -10,10 +10,9 @@ num = random.randint(10)
 print("Guess number from 1 - 10")
 userInput = int(input())
 
-if(userInput == num):
-    print("Congratulations!! you guessed the right number")
-elif(userInput > num):
-    print("Try Again. Hint: Your guessed bigger number")
-elif(userInput < num):
-    print("Try Again. Hint: Your guessed bigger number")
 
+while userInput!= num:
+    userInput = int(input("Wrong guess, try again? "))
+
+    if userInput == num:
+        print("Congratulations!! you guessed the right number")
